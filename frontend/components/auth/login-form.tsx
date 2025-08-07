@@ -27,13 +27,15 @@ export function LoginForm({
   const auth = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
+  
   const callback = searchParams.get("callback") || "/dashboard";
+
   const onSubmit = async (data: LoginFormInputs) => {
     try {
       setLoading(true);
       const res = await apiService.post("/api/auth/login", data);
 
-      const result = res.data;
+      const result = res?.data;
 
       auth.login(result.token, result.user);
 

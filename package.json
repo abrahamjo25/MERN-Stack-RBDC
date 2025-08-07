@@ -4,7 +4,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"nodemon server.js\" \"npm run dev --prefix frontend\""
+    "dev": "concurrently \"nodemon server.js\" \"npm run dev --prefix frontend\"",
+     "build": "npm run build --prefix frontend",
+    "start": "NODE_ENV=production node server.js",
+    "start:frontend": "npm run start --prefix frontend",
+    "start:fullstack": "concurrently \"npm run start\" \"npm run start:frontend\""
   },
   "dependencies": {
     "express": "^4.18.2",
