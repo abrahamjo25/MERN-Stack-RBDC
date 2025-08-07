@@ -5,7 +5,7 @@ title: Dejen RBDC - Role-Based Access Control
 # Dejen RBDC (Role-Based Access Control MERN Stack)
 
 A dynamic **Role-Based Access Control (RBAC)** system built with **Next.js** (React) on the frontend and **Express.js** on the backend. This project manages users, roles, and permissions with secure authentication, CRUD operations, and middleware protection.
-### ![alt text](image.png)
+![Alt text](https://github.com/abrahamjo25/MERN-Stack-RBDC/blob/main/cover-image.png?raw=true)
 ---
 
 ## Features
