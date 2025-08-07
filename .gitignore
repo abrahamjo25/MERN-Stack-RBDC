@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Env files
+.env
+.env.*.local
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Ignore uploads (optional)
+uploads/
