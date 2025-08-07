@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node server.js",
     "start:frontend": "npm run start --prefix frontend",
     "start:fullstack": "concurrently \"npm run start\" \"npm run start:frontend\"",
-     "install:all": "pnpm install --force && pnpm install --prefix backend --force && pnpm install --prefix frontend --force"
+     "install:all": "npm install --force && npm install --prefix backend --force && npm install --prefix frontend --force"
   },
   "dependencies": {
     "express": "^4.18.2",
